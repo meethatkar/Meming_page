@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* @layer utilities{
+    @keyframes loading {
+        0%{
+            trasnform: scale(0);
+            opacity: 0;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+#loading-main>p:nth-child(1){
+    animation-delay: 0s;
+}
+#loading-main>p:nth-child(2){
+    animation-delay: 0.5s;
+}
+#loading-main>p:nth-child(3){
+    animation-delay: 1s;
+} */

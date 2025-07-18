@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes Page</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body
+    class="bg-[url(/app-background.png)] bg-center min-h-screen w-screen [background-size:3.2rem] flex flex-col items-center justify-center font-[poppins] overflow-x-hidden">
+    <h1
+        class="mb-16 text-white font-semibold text-[9vw] md:text-[5vw] text-center uppercase border-b-2 border-b-gray-300">
+        Meme Generator </h1>
+    <div id="wrapper"
+        class="min-h-6/12 w-8/12 md:w-4/12 md:min-h-8/12 bg-white rounded-sm [box-shadow:0px_20px_30px_rgb(255,255,255,0.3)] flex items-center flex-col py-5 px-5 relative">
+        <img src="" alt="" class="w-full md:w-10/12" id="Meme">
+        <p class="my-3 text-xl text-center" id="title"> Hahahaha !!! <br> 😆 😂 🤣</p>
+        <button class="text-xl px-4 py-2 bg-purple-400 rounded-full text-white font-medium"> Get Meme </button>
+        <div id="loader-main" class="absolute h-full w-full bg-white flex flex-col items-center justify-center text-[10vw] md:text-[5vw]">
+            <div id="pDivs" class="flex items-center justify-center">
+                <p>😆</p>
+            <p>😂</p>
+            <p>🤣</p>
+            </div>
+            <span class="text-[5vw] md:text-[3vw]">LOADING</span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
