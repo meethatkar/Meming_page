@@ -10,7 +10,7 @@
 </head>
 
 <body
-    class="bg-[url(/app-background.png)] bg-center min-h-screen w-screen [background-size:3.2rem] flex flex-col items-center justify-center font-[poppins] overflow-x-hidden">
+    class="bg-center min-h-screen w-screen [background-size:3.2rem] flex flex-col items-center justify-center font-[poppins] overflow-x-hidden">
     <h1
         class="mb-16 text-white font-semibold text-[9vw] md:text-[5vw] text-center uppercase border-b-2 border-b-gray-300">
         Meme Generator </h1>
@@ -33,3 +33,17 @@
 </body>
 
 </html>
+
+
+<!-- 
+    steps:
+    called api passing url+subReddit,
+    1st .then() converted res into json format,
+    2nd  .then() extracted json format data and using it,
+    created new image var,
+    when new image var is loaded-> 
+    -set html's meme img div's src = data.url (image url),
+    -set html title's div = data.title.
+    -new image var.src = data.url.
+    close loader
+-->
